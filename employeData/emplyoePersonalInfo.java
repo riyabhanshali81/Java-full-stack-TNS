@@ -10,12 +10,21 @@ public class emplyoePersonalInfo {
 		name = "Defult";
 		email = "none";
 	}
+	
+	//We can also use private That Don't allow to create obj of peramiter Constructor 
+	//peramitter Constructor
+	public emplyoePersonalInfo(String name,String email,String add,int phoneNumber) {
+		this.name = name;
+		this.email = email;
+		this.add = add;
+		this.phoneNumber = phoneNumber;
+	}
 
 	public String getEmail() {
 		return email;
 	}
 	
-	//All set method Use to acces private public or protected var.
+	//All set method Use to access private public or protected var.
 	public void setEmail(String email) {
 		this.email = email;
 	}
